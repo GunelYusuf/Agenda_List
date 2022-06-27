@@ -7,9 +7,11 @@
   <ItemGroup>
     <None Remove="Repositories\" />
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Repositories\AgendaList\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
+    <Folder Include="Repositories\AgendaList\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Agenda_List.Domain\Agenda_List.Domain.csproj" />

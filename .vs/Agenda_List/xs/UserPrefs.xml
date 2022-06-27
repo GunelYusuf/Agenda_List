@@ -1,9 +1,8 @@
 ﻿<Properties StartupConfiguration="{AD396678-89EE-43F5-AA22-85F5AB3B4F4F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/WebApi/Api/Properties/launchSettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/WebApi/Api/Controllers/AgendaListController.cs">
     <Files>
-      <File FileName="src/Infrastructure/Agenda_List.Persistence/DesingTimeDbContextFactory.cs" Line="12" Column="86" />
-      <File FileName="src/WebApi/Api/Startup.cs" />
-      <File FileName="src/WebApi/Api/Properties/launchSettings.json" Line="31" Column="2" />
+      <File FileName="src/Infrastructure/Agenda_List.Persistence/ServiceRegistration.cs" Line="1" Column="1" />
+      <File FileName="src/WebApi/Api/Controllers/AgendaListController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,8 +11,8 @@
             <Node name="src" expanded="True">
               <Node name="WebApi" expanded="True">
                 <Node name="Api" expanded="True">
-                  <Node name="Properties" expanded="True">
-                    <Node name="launchSettings.json" selected="True" />
+                  <Node name="Controllers" expanded="True">
+                    <Node name="AgendaListController.cs" selected="True" />
                   </Node>
                 </Node>
               </Node>
