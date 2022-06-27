@@ -27,6 +27,7 @@ export default function EventModal() {
       id: selectedEvent ? selectedEvent.id : Date.now(),
     };
     if (selectedEvent) {
+      console.log(selectedEvent,'selectdide');
       dispatchCalEvent({ type: "update", payload: calendarEvent });
     } else {
       dispatchCalEvent({ type: "push", payload: calendarEvent });

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Agenda_List.Application.Repositories;
-using Agenda_List.Domain.Entities.Common;
+using Agenda_List.Domain.Common;
 using Agenda_List.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 

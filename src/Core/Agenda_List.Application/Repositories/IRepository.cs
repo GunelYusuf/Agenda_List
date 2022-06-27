@@ -1,5 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Agenda_List.Domain.Entities.Common;
+﻿using Agenda_List.Domain.Common;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Agenda_List.Application.Repositories
 {

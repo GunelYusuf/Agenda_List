@@ -1,0 +1,15 @@
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/bin/Debug/netcoreapp3.1/Agenda_List.Persistence.deps.json
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/bin/Debug/netcoreapp3.1/Agenda_List.Persistence.dll
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/bin/Debug/netcoreapp3.1/Agenda_List.Persistence.pdb
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/bin/Debug/netcoreapp3.1/Agenda_List.Application.dll
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/bin/Debug/netcoreapp3.1/Agenda_List.Domain.dll
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/bin/Debug/netcoreapp3.1/Agenda_List.Application.pdb
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/bin/Debug/netcoreapp3.1/Agenda_List.Domain.pdb
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/obj/Debug/netcoreapp3.1/Agenda_List.Persistence.csproj.AssemblyReference.cache
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/obj/Debug/netcoreapp3.1/Agenda_List.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/obj/Debug/netcoreapp3.1/Agenda_List.Persistence.AssemblyInfoInputs.cache
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/obj/Debug/netcoreapp3.1/Agenda_List.Persistence.AssemblyInfo.cs
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/obj/Debug/netcoreapp3.1/Agenda_List.Persistence.csproj.CoreCompileInputs.cache
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/obj/Debug/netcoreapp3.1/Agenda_List.Persistence.csproj.CopyComplete
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/obj/Debug/netcoreapp3.1/Agenda_List.Persistence.dll
+/Users/gunelyusubova/Desktop/Agenda_List/src/Infrastructure/Agenda_List.Persistence/obj/Debug/netcoreapp3.1/Agenda_List.Persistence.pdb

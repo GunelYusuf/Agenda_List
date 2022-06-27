@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Agenda_List.Domain.Entities.Common;
+using Agenda_List.Domain.Common;
 
 namespace Agenda_List.Application.Repositories
 {

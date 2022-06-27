@@ -1,10 +1,9 @@
 ﻿using System;
-namespace Agenda_List.Domain.Entities.Common
+
+namespace Agenda_List.Domain.Common
 {
     public class BaseEntity
     {
         public Guid Id { get; set; }
-        public DateTime CreateDate { get; set; }
-        public DateTime UpdateDate { get; set; }
     }
 }
