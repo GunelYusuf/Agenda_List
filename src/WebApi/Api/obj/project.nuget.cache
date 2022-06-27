@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ALvkmyJjJ6ekvcTjkGu9NZaiugpr5mWwTcyGTmBDGENSQlrKtBq23jm7VtLfKd/jAj9sqz8qcclVw9wB/oBnNA==",
+  "dgSpecHash": "q8ctPUXfdX0U7mwdGx0sTgDhgQs+H0Emq1WiP+RLNX0saJNmUU8uIQDwmVdkABHk0SmPX1xt1eW/px2JcGD5sw==",
   "success": true,
   "projectFilePath": "/Users/gunelyusubova/Desktop/Agenda_List/src/WebApi/Api/Api.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/gunelyusubova/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
   "logs": []
 }
