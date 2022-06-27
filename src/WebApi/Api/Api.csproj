@@ -32,7 +32,7 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Agenda_List.Application\Agenda_List.Application.csproj">
+    <ProjectReference Include="..\..\Infrastructure\Agenda_List.Persistence\Agenda_List.Persistence.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>

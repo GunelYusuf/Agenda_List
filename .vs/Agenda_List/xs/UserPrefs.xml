@@ -1,19 +1,23 @@
 ﻿<Properties StartupConfiguration="{AD396678-89EE-43F5-AA22-85F5AB3B4F4F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/WebApi/Api/Controllers/AgendaListController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Infrastructure/Agenda_List.Persistence/ServiceRegistration.cs">
     <Files>
+      <File FileName="src/WebApi/Api/Controllers/AgendaListController.cs" Line="28" Column="39" />
       <File FileName="src/Infrastructure/Agenda_List.Persistence/ServiceRegistration.cs" Line="1" Column="1" />
-      <File FileName="src/WebApi/Api/Controllers/AgendaListController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Agenda_List" expanded="True">
             <Node name="src" expanded="True">
+              <Node name="Core" expanded="True" />
+              <Node name="Infrastructure" expanded="True">
+                <Node name="Agenda_List.Persistence" expanded="True">
+                  <Node name="ServiceRegistration.cs" selected="True" />
+                </Node>
+              </Node>
               <Node name="WebApi" expanded="True">
                 <Node name="Api" expanded="True">
-                  <Node name="Controllers" expanded="True">
-                    <Node name="AgendaListController.cs" selected="True" />
-                  </Node>
+                  <Node name="Controllers" expanded="True" />
                 </Node>
               </Node>
             </Node>

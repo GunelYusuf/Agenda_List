@@ -8,15 +8,23 @@
     <None Remove="Repositories\" />
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Repositories\AgendaList\" />
+    <None Remove="Dto\" />
+    <None Remove="Dto\AgendaDto\" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="AutoMapper\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
     <Folder Include="Repositories\AgendaList\" />
+    <Folder Include="Dto\" />
+    <Folder Include="Dto\AgendaDto\" />
+    <Folder Include="AutoMapper\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Agenda_List.Domain\Agenda_List.Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
   </ItemGroup>
 </Project>
