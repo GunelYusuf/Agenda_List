@@ -11,6 +11,6 @@ namespace Agenda_List.Domain.Entities
 
         public string Label { get; set; }
 
-        public DateTime DayEvents { get; set; }
+        public Int64 day { get; set; }
     }
 }

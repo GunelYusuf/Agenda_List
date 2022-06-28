@@ -31,8 +31,8 @@ namespace Api.Controllers
         {
             Agenda agenda = _mapper.Map<Agenda>(agendaDto);
             await _agendaListWrite.AddAsync(agenda);
-            var result = await _agendaListWrite.SaveAsync()>0;
-            if(result) return Ok();
+            var result = await _agendaListWrite.SaveAsync() > 0;
+            if (result) return CreatedAtRoute("GetAgenda", new { id = agenda.Id }, agenda.Id);
             return BadRequest();
         }
 
@@ -45,7 +45,15 @@ namespace Api.Controllers
             return Ok(agenda);
         }
 
-       
+        [HttpGet("{id}", Name = "GetAgenda")]
+        public async Task<IActionResult> GetAgenda(Guid id)
+        {
+            var agenda = _agendaListRead.GetWhere(x => x.Id == id);
+            if (agenda == null) return NotFound();
+            AgendaDto agendaDto = _mapper.Map<AgendaDto>(agenda);
+            return Ok(agendaDto);
+        }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {

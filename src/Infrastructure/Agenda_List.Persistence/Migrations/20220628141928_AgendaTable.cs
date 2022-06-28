@@ -15,7 +15,7 @@ namespace Agenda_List.Persistence.Migrations
                     Title = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true),
                     Label = table.Column<string>(nullable: true),
-                    DayEvents = table.Column<DateTime>(nullable: false)
+                    day = table.Column<long>(nullable: false)
                 },
                 constraints: table =>
                 {

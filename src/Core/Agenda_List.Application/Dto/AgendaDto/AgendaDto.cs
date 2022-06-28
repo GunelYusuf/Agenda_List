@@ -13,6 +13,6 @@ namespace Agenda_List.Application.Dto.AgendaDto
         [Required]
         public string Label { get; set; }
 
-        public DateTime DayEvents { get; set; }
+        public Int64 day { get; set; }
     }
 }

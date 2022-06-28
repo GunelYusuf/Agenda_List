@@ -1,10 +1,10 @@
 /Users/gunelyusubova/Desktop/Agenda_List/src/Core/Agenda_List.Domain/bin/Debug/netcoreapp3.1/Agenda_List.Domain.deps.json
 /Users/gunelyusubova/Desktop/Agenda_List/src/Core/Agenda_List.Domain/bin/Debug/netcoreapp3.1/Agenda_List.Domain.dll
 /Users/gunelyusubova/Desktop/Agenda_List/src/Core/Agenda_List.Domain/bin/Debug/netcoreapp3.1/Agenda_List.Domain.pdb
-/Users/gunelyusubova/Desktop/Agenda_List/src/Core/Agenda_List.Domain/obj/Debug/netcoreapp3.1/Agenda_List.Domain.csproj.AssemblyReference.cache
 /Users/gunelyusubova/Desktop/Agenda_List/src/Core/Agenda_List.Domain/obj/Debug/netcoreapp3.1/Agenda_List.Domain.GeneratedMSBuildEditorConfig.editorconfig
 /Users/gunelyusubova/Desktop/Agenda_List/src/Core/Agenda_List.Domain/obj/Debug/netcoreapp3.1/Agenda_List.Domain.AssemblyInfoInputs.cache
 /Users/gunelyusubova/Desktop/Agenda_List/src/Core/Agenda_List.Domain/obj/Debug/netcoreapp3.1/Agenda_List.Domain.AssemblyInfo.cs
 /Users/gunelyusubova/Desktop/Agenda_List/src/Core/Agenda_List.Domain/obj/Debug/netcoreapp3.1/Agenda_List.Domain.csproj.CoreCompileInputs.cache
 /Users/gunelyusubova/Desktop/Agenda_List/src/Core/Agenda_List.Domain/obj/Debug/netcoreapp3.1/Agenda_List.Domain.dll
 /Users/gunelyusubova/Desktop/Agenda_List/src/Core/Agenda_List.Domain/obj/Debug/netcoreapp3.1/Agenda_List.Domain.pdb
+/Users/gunelyusubova/Desktop/Agenda_List/src/Core/Agenda_List.Domain/obj/Debug/netcoreapp3.1/Agenda_List.Domain.csproj.AssemblyReference.cache

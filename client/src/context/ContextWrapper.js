@@ -1,26 +1,19 @@
 import React, { useState, useEffect, useReducer, useMemo } from "react";
 import GlobalContext from "./GlobalContext";
 import dayjs from "dayjs";
+import httpAgent from '../api/httpAgent';
 
-function savedEventsReducer(state, { type, payload }) {
-  switch (type) {
-    case "push":
-      return [...state, payload];
-    case "update":
-      return state.map((evt) => (evt.id === payload.id ? payload : evt));
-    case "delete":
-      return state.filter((evt) => evt.id !== payload.id);
-    default:
-      throw new Error();
-  }
-}
-function initEvents() {
-  const storageEvents = localStorage.getItem("savedEvents");
-  const parsedEvents = storageEvents ? JSON.parse(storageEvents) : [];
-  return parsedEvents;
-}
 
 export default function ContextWrapper(props) {
+function initEvents() {
+   httpAgent.Agenda.getAllEvents().then(res => {
+     localStorage.setItem("savedEvents", JSON.stringify(res));
+   })
+ const storageEvents = localStorage.getItem("savedEvents");
+ const parsedEvents = storageEvents ? JSON.parse(storageEvents) : [];
+ return parsedEvents;
+}
+
   const [monthIndex, setMonthIndex] = useState(dayjs().month());
   const [smallCalendarMonth, setSmallCalendarMonth] = useState(null);
   const [daySelected, setDaySelected] = useState(dayjs());
@@ -32,6 +25,20 @@ export default function ContextWrapper(props) {
     [],
     initEvents
   );
+
+  function savedEventsReducer(state, { type, payload }) {
+    switch (type) {
+      case "push":
+        return [...state, payload];
+      case "update":
+        return state.map((evt) => (evt.id === payload.id ? payload : evt));
+      case "delete":
+        httpAgent.Agenda.deleteEvent(payload.id)
+        return state.filter((evt) => evt.id !== payload.id);
+      default:
+        throw new Error();
+    }
+  }
 
   const filteredEvents = useMemo(() => {
     return savedEvents.filter((evt) =>

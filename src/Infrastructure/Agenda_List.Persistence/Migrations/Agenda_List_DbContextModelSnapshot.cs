@@ -25,9 +25,6 @@ namespace Agenda_List.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("DayEvents")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
@@ -36,6 +33,9 @@ namespace Agenda_List.Persistence.Migrations
 
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("day")
+                        .HasColumnType("bigint");
 
                     b.HasKey("Id");
 

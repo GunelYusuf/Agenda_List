@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import httpAgent from "../api/httpAgent";
 import GlobalContext from "../context/GlobalContext";
 
 const labelsClasses = ["indigo", "gray", "green", "blue", "red", "purple"];
@@ -24,13 +25,18 @@ export default function EventModal() {
       description,
       label: selectedLabel,
       day: daySelected.valueOf(),
-      id: selectedEvent ? selectedEvent.id : Date.now(),
+      id: selectedEvent ? selectedEvent.id : undefined,
     };
     if (selectedEvent) {
-      console.log(selectedEvent,'selectdide');
+      httpAgent.Agenda.putEvent(calendarEvent)
       dispatchCalEvent({ type: "update", payload: calendarEvent });
     } else {
-      dispatchCalEvent({ type: "push", payload: calendarEvent });
+      httpAgent.Agenda.postEvent(calendarEvent).then(res=>{
+        calendarEvent["id"] = res
+      }).then(()=>{
+        dispatchCalEvent({ type: "push", payload: calendarEvent });
+      })
+      
     }
 
     setShowEventModal(false);
