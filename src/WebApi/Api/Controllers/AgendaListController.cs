@@ -29,6 +29,11 @@ namespace Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(AgendaDto agendaDto)
         {
+            if (agendaDto.Id !=null)
+            {
+                if (await _agendaListRead.GetByIdAsync(agendaDto.Id.ToString()) != null) return NoContent();
+            }
+
             Agenda agenda = _mapper.Map<Agenda>(agendaDto);
             await _agendaListWrite.AddAsync(agenda);
             var result = await _agendaListWrite.SaveAsync() > 0;
@@ -58,6 +63,7 @@ namespace Api.Controllers
         public async Task<IActionResult> Delete(Guid id)
         {
             Agenda agenda = await _agendaListRead.GetByIdAsync(id.ToString());
+            if (agenda == null) return NotFound();
             bool success = _agendaListWrite.Remove(agenda);
             if (success) await _agendaListWrite.SaveAsync();
             else return BadRequest(new ProblemDetails { Title = "An error occurred while deleting the event" });

@@ -1,6 +1,8 @@
 import React, { useContext, useState } from "react";
+import { toast } from "react-toastify";
 import httpAgent from "../api/httpAgent";
 import GlobalContext from "../context/GlobalContext";
+import "react-toastify/dist/ReactToastify.css";
 
 const labelsClasses = ["indigo", "gray", "green", "blue", "red", "purple"];
 
@@ -28,15 +30,23 @@ export default function EventModal() {
       id: selectedEvent ? selectedEvent.id : undefined,
     };
     if (selectedEvent) {
-      httpAgent.Agenda.putEvent(calendarEvent)
-      dispatchCalEvent({ type: "update", payload: calendarEvent });
-    } else {
+      httpAgent.Agenda.putEvent(calendarEvent).then(() =>{
+       dispatchCalEvent({ type: "update", payload: calendarEvent });
+      }).then(() =>{
+        toast.success('Event is updated successfully')
+      }).catch((err) =>{
+        toast.error(err)
+      })
+       } else {
       httpAgent.Agenda.postEvent(calendarEvent).then(res=>{
         calendarEvent["id"] = res
       }).then(()=>{
         dispatchCalEvent({ type: "push", payload: calendarEvent });
+      }).then(() =>{
+       toast.success('Event is created successfully')
+      }).catch((err) =>{
+        toast.error(err)
       })
-      
     }
 
     setShowEventModal(false);
@@ -52,11 +62,18 @@ export default function EventModal() {
             {selectedEvent && (
               <span
                 onClick={() => {
-                  dispatchCalEvent({
-                    type: "delete",
-                    payload: selectedEvent,
+                  httpAgent.Agenda.deleteEvent(selectedEvent.id).then(() =>{
+                     dispatchCalEvent({
+                       type: "delete",
+                       payload: selectedEvent,
+                     });
+                  }).then(() =>{
+                    toast.success("Event is deleted successfully")
+                  }).catch((err)=>{
+                   toast.error(err)
+                  }).finally(() =>{
+                     setShowEventModal(false);
                   });
-                  setShowEventModal(false);
                 }}
                 className="material-icons-outlined text-gray-400 cursor-pointer"
               >

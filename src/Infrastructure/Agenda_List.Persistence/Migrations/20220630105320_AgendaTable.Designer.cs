@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Agenda_List.Persistence.Migrations
 {
     [DbContext(typeof(Agenda_List_DbContext))]
-    [Migration("20220628141928_AgendaTable")]
+    [Migration("20220630105320_AgendaTable")]
     partial class AgendaTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -15,6 +15,7 @@ function initEvents() {
 }
 
   const [monthIndex, setMonthIndex] = useState(dayjs().month());
+  const [loading, setLoading] = useState(true);
   const [smallCalendarMonth, setSmallCalendarMonth] = useState(null);
   const [daySelected, setDaySelected] = useState(dayjs());
   const [showEventModal, setShowEventModal] = useState(false);
@@ -29,11 +30,13 @@ function initEvents() {
   function savedEventsReducer(state, { type, payload }) {
     switch (type) {
       case "push":
-        return [...state, payload];
+        var found = state.find((e) => e.id === payload.id)
+        if(found === undefined)
+        return [...state, payload]
       case "update":
         return state.map((evt) => (evt.id === payload.id ? payload : evt));
       case "delete":
-        httpAgent.Agenda.deleteEvent(payload.id)
+       
         return state.filter((evt) => evt.id !== payload.id);
       default:
         throw new Error();
@@ -100,6 +103,8 @@ function initEvents() {
         labels,
         updateLabel,
         filteredEvents,
+        loading,
+        setLoading,
       }}
     >
       {props.children}
